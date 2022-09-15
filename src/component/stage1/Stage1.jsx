@@ -197,7 +197,7 @@ export const Stage1 = ({ body }) => {
 
   useEffect(() => {
     console.log('gameStart', gameStart)
-    if (gameStartCheck.current < 2) {
+    if (gameStartCheck.current < 1) {
       gameStartCheck.current += 1
       return
     }
