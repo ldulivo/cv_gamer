@@ -171,7 +171,7 @@ export const Stage1 = ({ body }) => {
   }, [clientX])
 
   useEffect(() => {
-    console.log('dataFruit', dataFruit)
+    /* console.log('dataFruit', dataFruit) */
     if (clientX.ScreenPosition < 0) {
       return
     }
@@ -197,7 +197,7 @@ export const Stage1 = ({ body }) => {
   }, [playerX])
 
   useEffect(() => {
-    console.log('gameStart', gameStart)
+    /* console.log('gameStart', gameStart) */
     if (gameStartCheck.current < 1) {
       gameStartCheck.current += 1
       console.log('gameStartCheck.current', gameStartCheck.current)
