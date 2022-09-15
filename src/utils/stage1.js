@@ -1,10 +1,10 @@
-export const fruitProcessing = (dataFruit, screenWidth) => {
+export const useFruitProcessing = (dataFruit, screenWidth) => {
   // eslint-disable-next-line array-callback-return
   dataFruit.map(function (f, i) {
     if (f.y >= 435) {
       dataFruit[i] = f = {
-        nameFruit: fruitName(),
-        x: fruitRandom(screenWidth),
+        nameFruit: useFruitName(),
+        x: useFruitRandom(screenWidth),
         y: -30
       }
     } else {
@@ -26,36 +26,36 @@ export const fruitProcessing = (dataFruit, screenWidth) => {
   return dataFruit
 }
 
-export const newFruitProcessing = (dataFruit, screenWidth) => {
+export const useNewFruitProcessing = (dataFruit, screenWidth) => {
   /* dataFruit[0] = {
     nameFruit: 'apple',
-    x: fruitRandom(screenWidth),
+    x: useFruitRandom(screenWidth),
     y: -30
   } */
   dataFruit = [
     {
-      nameFruit: fruitName(),
-      x: fruitRandom(screenWidth),
+      nameFruit: useFruitName(),
+      x: useFruitRandom(screenWidth),
       y: -30
     },
     {
-      nameFruit: fruitName(),
-      x: fruitRandom(screenWidth),
+      nameFruit: useFruitName(),
+      x: useFruitRandom(screenWidth),
       y: -130
     },
     {
-      nameFruit: fruitName(),
-      x: fruitRandom(screenWidth),
+      nameFruit: useFruitName(),
+      x: useFruitRandom(screenWidth),
       y: -200
     },
     {
-      nameFruit: fruitName(),
-      x: fruitRandom(screenWidth),
+      nameFruit: useFruitName(),
+      x: useFruitRandom(screenWidth),
       y: -280
     },
     {
-      nameFruit: fruitName(),
-      x: fruitRandom(screenWidth),
+      nameFruit: useFruitName(),
+      x: useFruitRandom(screenWidth),
       y: -320
     }
   ]
@@ -63,11 +63,11 @@ export const newFruitProcessing = (dataFruit, screenWidth) => {
   return dataFruit
 }
 
-export const fruitRandom = (screenWidth) => {
+export const useFruitRandom = (screenWidth) => {
   return (Math.floor(Math.random() * (screenWidth - 50)) + 25)
 }
 
-export const fruitName = () => {
+export const useFruitName = () => {
   const name = Math.floor(Math.random() * 5)
   switch (name) {
     case 0:

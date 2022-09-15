@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { fruitProcessing, newFruitProcessing } from '../../utils/stage1'
+import { useFruitProcessing, useNewFruitProcessing } from '../../utils/stage1'
 import { Player } from '../Player'
 import { Fruit } from './Fruit'
 
@@ -119,12 +119,12 @@ export const Stage1 = ({ body }) => {
       const runFruit = setInterval(() => {
         screenWidth = ContainerStage1.current.clientWidth
         setGameStart(gameStart + 1)
-        setDataFruit(fruitProcessing(dataFruit, screenWidth))
+        setDataFruit(useFruitProcessing(dataFruit, screenWidth))
       }, 20)
       return () => clearInterval(runFruit)
     } else {
       screenWidth = ContainerStage1.current.clientWidth
-      setDataFruit(newFruitProcessing(dataFruit, screenWidth))
+      setDataFruit(useNewFruitProcessing(dataFruit, screenWidth))
       setGameStart(gameStart + 1)
     }
   }, [gameStart])
