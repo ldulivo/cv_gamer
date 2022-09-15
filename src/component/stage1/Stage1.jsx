@@ -105,7 +105,7 @@ export const Stage1 = ({ body }) => {
   body.classList.add('stage1')
   const movePixel = 5
 
-  /* const [dataFruit, setDataFruit] = useState([
+  const [dataFruit, setDataFruit] = useState([
     {
       nameFruit: 'sandia',
       x: 30,
@@ -131,9 +131,9 @@ export const Stage1 = ({ body }) => {
       x: 150,
       y: -320
     }
-  ]) */
+  ])
 
-  const [dataFruit, setDataFruit] = useState([])
+  /* const [dataFruit, setDataFruit] = useState([]) */
 
   const HandleClickClient = (e) => {
     setClientX({
