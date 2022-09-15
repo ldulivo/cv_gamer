@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cv_gamer/static/css/main.045b1c6d.css",
-    "main.js": "/cv_gamer/static/js/main.2a98eb24.js",
+    "main.js": "/cv_gamer/static/js/main.b9c6e6c1.js",
     "static/js/787.58a925dd.chunk.js": "/cv_gamer/static/js/787.58a925dd.chunk.js",
     "static/media/run.gif": "/cv_gamer/static/media/run.fb986f42349e08bc2845.gif",
     "static/media/Full-Background.png": "/cv_gamer/static/media/Full-Background.48dfd9680eb20edfcc84.png",
@@ -10,11 +10,11 @@
     "static/media/background.jpg": "/cv_gamer/static/media/background.978b0eb0fdc4bfb9d6ed.jpg",
     "index.html": "/cv_gamer/index.html",
     "main.045b1c6d.css.map": "/cv_gamer/static/css/main.045b1c6d.css.map",
-    "main.2a98eb24.js.map": "/cv_gamer/static/js/main.2a98eb24.js.map",
+    "main.b9c6e6c1.js.map": "/cv_gamer/static/js/main.b9c6e6c1.js.map",
     "787.58a925dd.chunk.js.map": "/cv_gamer/static/js/787.58a925dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.045b1c6d.css",
-    "static/js/main.2a98eb24.js"
+    "static/js/main.b9c6e6c1.js"
   ]
 }
