@@ -27,7 +27,6 @@ export const Fruit = ({ nameFruit, x, y = -30, fruitIMG }) => {
   let newFruit2
 
   useEffect(() => {
-    console.log('fruit')
     idFruit.current.style.left = `${x}px`
     idFruit.current.style.top = `${y}px`
   }, [y])
