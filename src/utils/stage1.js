@@ -63,11 +63,11 @@ export const newFruitProcessing = (dataFruit, screenWidth) => {
   return dataFruit
 }
 
-const fruitRandom = (screenWidth) => {
+export const fruitRandom = (screenWidth) => {
   return (Math.floor(Math.random() * (screenWidth - 50)) + 25)
 }
 
-const fruitName = () => {
+export const fruitName = () => {
   const name = Math.floor(Math.random() * 5)
   switch (name) {
     case 0:
