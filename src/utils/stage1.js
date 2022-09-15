@@ -3,7 +3,7 @@ export const fruitProcessing = (dataFruit, screenWidth) => {
   dataFruit.map(function (f, i) {
     if (f.y >= 435) {
       dataFruit[i] = f = {
-        ...f,
+        nameFruit: fruitName(),
         x: fruitRandom(screenWidth),
         y: -30
       }

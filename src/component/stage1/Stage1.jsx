@@ -20,15 +20,35 @@ export const Stage1 = ({ body }) => {
   body.classList.add('stage1')
   const movePixel = 5
 
-  /* const [dataFruit, setDataFruit] = useState([
+  const [dataFruit, setDataFruit] = useState([
+    {
+      nameFruit: 'sandia',
+      x: 30,
+      y: -30
+    },
+    {
+      nameFruit: 'peach',
+      x: 60,
+      y: -130
+    },
+    {
+      nameFruit: 'basaha',
+      x: 90,
+      y: -200
+    },
+    {
+      nameFruit: 'banana',
+      x: 120,
+      y: -280
+    },
     {
       nameFruit: 'apple',
-      x: 100,
-      y: -30
+      x: 150,
+      y: -320
     }
-  ]) */
+  ])
 
-  const [dataFruit, setDataFruit] = useState([])
+  /* const [dataFruit, setDataFruit] = useState([]) */
 
   const HandleClickClient = (e) => {
     setClientX({
@@ -134,7 +154,7 @@ export const Stage1 = ({ body }) => {
               screenWidth={screenWidth}
               />
           : null */
-        (dataFruit.length > 0)
+        /* (dataFruit.length > 0)
           ? (dataFruit.map((f, i) =>
             // eslint-disable-next-line react/jsx-key
             <Fruit
@@ -143,7 +163,15 @@ export const Stage1 = ({ body }) => {
               x={f.x}
               y={f.y}
               />))
-          : null
+          : null */
+          (dataFruit.map((f, i) =>
+            // eslint-disable-next-line react/jsx-key
+            <Fruit
+              key={i}
+              nameFruit={f.nameFruit}
+              x={f.x}
+              y={f.y}
+              />))
       }
     </div>
   )

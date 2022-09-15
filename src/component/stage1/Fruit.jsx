@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 
-import apple from '../../img/object/fruit/apple.png'
+/* import apple from '../../../src/img/object/fruit/apple.png'
 import apple1 from '../../img/object/fruit/apple-1.png'
 import apple2 from '../../img/object/fruit/apple-2.png'
 
@@ -18,9 +18,9 @@ import basaha2 from '../../img/object/fruit/basaha-2.png'
 
 import banana from '../../img/object/fruit/banana.png'
 import banana1 from '../../img/object/fruit/banana-1.png'
-import banana2 from '../../img/object/fruit/banana-2.png'
+import banana2 from '../../img/object/fruit/banana-2.png' */
 
-export const Fruit = ({ nameFruit, x, y = -30 }) => {
+export const Fruit = ({ nameFruit, x, y = -30, fruitIMG }) => {
   const idFruit = useRef()
   let newFruit
   let newFruit1
@@ -31,7 +31,7 @@ export const Fruit = ({ nameFruit, x, y = -30 }) => {
     idFruit.current.style.top = `${y}px`
   }, [y])
 
-  switch (nameFruit) {
+  /* switch (nameFruit) {
     case 'sandia':
       newFruit = sandia
       newFruit1 = sandia1
@@ -57,6 +57,34 @@ export const Fruit = ({ nameFruit, x, y = -30 }) => {
       newFruit = apple
       newFruit1 = apple1
       newFruit2 = apple2
+      break
+  } */
+  switch (nameFruit) {
+    case 'sandia':
+      newFruit = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/sandia.png'
+      newFruit1 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/sandia-1.png'
+      newFruit2 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/sandia-2.png'
+      break
+    case 'peach':
+      newFruit = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/peach.png'
+      newFruit1 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/peach-1.png'
+      newFruit2 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/peach-2.png'
+      break
+    case 'basaha':
+      newFruit = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/basaha.png'
+      newFruit1 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/basaha-1.png'
+      newFruit2 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/basaha-2.png'
+      break
+    case 'banana':
+      newFruit = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/banana.png'
+      newFruit1 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/banana-1.png'
+      newFruit2 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/banana-2.png'
+      break
+
+    default:
+      newFruit = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/apple.png'
+      newFruit1 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/apple-1.png'
+      newFruit2 = 'https://ldulivo.github.io/ldulivo/img/cv_gamer/object/fruit/apple-2.png'
       break
   }
 
