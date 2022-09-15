@@ -1,0 +1,12 @@
+.stage1 {
+  background: #92d7e7;
+  
+  > #root {
+    > .App {
+      > .container {
+        background-image: url(../img/background/mountain/Full-Background.png);
+        background-size: cover;  
+      }
+    }
+  }
+}
