@@ -1,5 +1,4 @@
 export const useFruitProcessing = (dataFruit, screenWidth) => {
-  console.log('dentro de funcion precessing')
   // eslint-disable-next-line array-callback-return
   dataFruit.map(function (f, i) {
     if (f.y >= 435) {
