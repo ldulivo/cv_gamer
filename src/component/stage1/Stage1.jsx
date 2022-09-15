@@ -196,6 +196,7 @@ export const Stage1 = ({ body }) => {
   }, [playerX])
 
   useEffect(() => {
+    console.log('gameStart', gameStart)
     if (gameStartCheck.current < 2) {
       gameStartCheck.current += 1
       return
@@ -215,6 +216,7 @@ export const Stage1 = ({ body }) => {
   }, [gameStart])
 
   useEffect(() => {
+    console.log('dataFruit', dataFruit)
     /* console.log('df', dataFruit)
     console.log('ContainerStage1', Math.floor(Math.random() * (ContainerStage1.current.clientWidth - 50))) */
   }, [dataFruit])
